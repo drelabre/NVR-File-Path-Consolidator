@@ -1,8 +1,8 @@
-Welcome to the NVR File Path Consolidator.
-This node is for simplifying the task of file path naming when saving in workflows with multiple images.
+#Welcome to the NVR File Path Consolidator.
+###This node is for simplifying the task of file path naming when saving in workflows with multiple images.
 
 
-HOW TO USE:
+####HOW TO USE:
 
 1. Load the "NVR File Path Consolidator"
 2. Place it near a Save Image node.
@@ -15,10 +15,10 @@ HOW TO USE:
 
 The idea is that you can plan a file path like the following examples for multiple Save Image nodes.
 
-ProjectName/Date/TypeOfRender/FileName_
-ProjectName/Date/OriginalRender/FileName_
-ProjectName/Date/UpscaleRender/FileName_
-ProjectName/Date/FaceDetailRender/FileName_
+- ProjectName/Date/**TypeOfRender**/FileName_
+- ProjectName/Date/**OriginalRender**/FileName_
+- ProjectName/Date/**UpscaleRender**/FileName_
+- ProjectName/Date/**FaceDetailRender**/FileName_
 
 Note that "TypeOfRender" above could be associated for the various Saves in your workflow.
 
@@ -26,10 +26,8 @@ By converting the "ProjectName" on all of the NVR File Path Consolidator node to
 
 This is a functionality that I need for some of my workflows and am sharing it in the event it's useful to anyone else.
 
-Full disclosure: I am not a programmer and used Perplexity and Claude Sonnet to help me understand and develop this node.
+**Full disclosure:** I am not a programmer and used Perplexity and Claude Sonnet to help me understand and develop this node.
 
-Use at your own risk.
-dre@n-v-r.com
-
-End of transmission from The Department of Never Been Done Before.
+Free to use, modidy, whatefer. Use at your own risk.
+***End of transmission from The Department of Never Been Done Before.***
 
