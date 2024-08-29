@@ -4,14 +4,14 @@ class NVRFilePathConsolidator:
         return {
             "required": {
                 "delimiter": ("STRING", {"default": "/"}),
-                "ProjectName": ("STRING", {"default": "ProjectName"}),
+                "Input1": ("STRING", {"default": "Input1"}),
             },
             "optional": {
-                "Date": ("STRING", {"default": "Date"}),
-                "RenderType": ("STRING", {"default": "RenderType"}),
-                "FileName": ("STRING", {"default": "FileName"}),
-                "text5": ("STRING", {"default": ""}),
-                "text6": ("STRING", {"default": ""}),
+                "Input2": ("STRING", {"default": "Input2"}),
+                "Input3": ("STRING", {"default": "Input3"}),
+                "Input4": ("STRING", {"default": "Input4"}),
+                "Input5": ("STRING", {"default": ""}),
+                "Input6": ("STRING", {"default": ""}),
             }
         }
 
@@ -19,10 +19,10 @@ class NVRFilePathConsolidator:
     FUNCTION = "concatenate_text"
     CATEGORY = "utils/text"
 
-    def concatenate_text(self, delimiter, ProjectName, Date="", RenderType="", FileName="", text5="", 
-                         text6=""):
+    def concatenate_text(self, delimiter, Input1, Input2="", Input3="", Input4="", Input5="", 
+                         Input6=""):
         # Collect all non-empty text inputs
-        text_parts = [text for text in [ProjectName, Date, RenderType, FileName, text5, text6] if text]
+        text_parts = [text for text in [Input1, Input2, Input3, Input4, Input5, Input6] if text]
         
         # Join the parts with the delimiter
         result = delimiter.join(text_parts)

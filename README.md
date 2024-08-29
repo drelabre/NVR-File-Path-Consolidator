@@ -4,7 +4,7 @@
 
 ####HOW TO USE:
 
-1. Load the "NVR File Path Consolidator"
+1. Load the "N-V-R File Path Consolidator"
 2. Place it near a Save Image node.
 3. In Save Image node, convert the File Prefix widget in input.
 4. In the NVR File Path Consolidator, design your file path using the widgets.
@@ -23,6 +23,8 @@ The idea is that you can plan a file path like the following examples for multip
 Note that "TypeOfRender" above could be associated for the various Saves in your workflow.
 
 By converting the "ProjectName" on all of the NVR File Path Consolidator node to inputs and piping in from the same primitive primitive, changing the ProjectName in one primitive will change it in all the nodes.
+
+NOTE: I renamed the widget names (see above two lines) to be generic (input1, input2, etc) rather than being prescriptive in how *I* intend to us it.
 
 This is a functionality that I need for some of my workflows and am sharing it in the event it's useful to anyone else.
 
